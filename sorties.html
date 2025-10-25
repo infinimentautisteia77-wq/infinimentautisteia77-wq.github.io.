@@ -1,80 +1,115 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Sorties & Ateliers — IA77</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sorties – IA77</title>
+  <meta name="description" content="Sorties éducatives IA77 : projet Les 5 Sens, Jardin d’Acclimatation en décembre, grande sortie Parc Astérix en fin d’année.">
   <style>
-    :root{--brand:#0a7bdc;--fg:#0b1736;--bg:#f6f8fb;--card:#fff;--radius:14px}
-    *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--fg)}
-    header{background:#fff;border-bottom:3px solid var(--brand)}.wrap{max-width:1000px;margin:auto;padding:1rem 1.2rem}
-    nav{display:flex;flex-wrap:wrap;gap:.6rem .9rem;margin-top:.6rem}nav a{padding:.45rem .7rem;border-radius:999px;text-decoration:none;color:var(--fg);background:#eef6ff;border:1px solid #d6eaff}
-    nav a:hover{background:#dff0ff}h1,h2{color:#0a7bdc}.card{background:var(--card);padding:1rem 1.1rem;border-radius:var(--radius);box-shadow:0 2px 10px rgba(2,24,62,.06);margin:1rem 0}
-    .grid{display:grid;gap:1rem}@media(min-width:840px){.grid{grid-template-columns:1fr 1fr}}
-    .mini{color:#6b7280}
-    footer{margin-top:2rem;background:#0b1736;color:#fff}footer a{color:#d9ecff;text-decoration:none}.brand{display:flex;gap:.6rem;align-items:center}.brand b{color:#0a7bdc;font-size:1.4rem}
+    :root{
+      --brand:#0a7bdc; --fg:#0b1736; --bg:#f5f7ff; --muted:#667;
+      --card:#fff; --accent:#004a9f;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font:16px/1.55 system-ui,Arial,Segoe UI,Roboto,sans-serif;color:var(--fg);background:var(--bg)}
+    header,footer{background:#fff;border-color:var(--brand)}
+    header{border-bottom:3px solid var(--brand);padding:1rem}
+    nav a{margin:.2rem .6rem;color:var(--brand);text-decoration:none;font-weight:700}
+    nav a:hover, nav a:focus{color:var(--accent);text-decoration:underline}
+    main{padding:1rem 1.25rem;max-width:980px;margin:0 auto}
+    h1{color:var(--brand);margin:.5rem 0 0}
+    h2{color:var(--accent);margin:1.25rem 0 .5rem}
+    .section{background:var(--card);margin:1rem 0;padding:1rem;border-radius:10px;box-shadow:0 1px 0 rgba(0,0,0,.06)}
+    .grid{display:grid;gap:1rem}
+    @media (min-width:760px){ .grid{grid-template-columns:1fr 1fr} }
+    .btn{display:inline-block;margin:.6rem .4rem 0 0;padding:.6rem 1rem;border-radius:8px;border:2px solid var(--brand);color:#fff;background:var(--brand);text-decoration:none;font-weight:700}
+    .btn--ghost{background:#fff;color:var(--brand)}
+    .info{color:var(--muted);font-size:.95rem}
+    figure{margin:0}
+    img{width:100%;height:auto;border-radius:10px;display:block}
+    ul{padding-left:1.2rem}
+    .badge{font-weight:700}
   </style>
 </head>
 <body>
+
 <header>
-  <div class="wrap">
-    <div class="brand"><span>🧩</span><b>Infiniment Autiste 77</b></div>
-    <nav>
-      <a href="index.html">À propos</a>
-      <a href="formation.html">Formations<span class="badge"></span></a>
-      <a href="sorties.html">Sorties</a>
-      <a href="devis.html">Devis</a>
-      <a href="contact.html">Contact</a>
-      <a href="questionnaire.html">Questionnaire</a>
-    </nav>
-  </div>
+  <h1>Infiniment Autiste 77 — IA77</h1>
+  <p><strong>IA77</strong> — Pour des parcours réellement adaptés ✨</p>
+  <nav>
+    <a href="index.html">À&nbsp;propos</a> ·
+    <a href="index.html#accomp">Accompagnements</a> ·
+    <a href="formation.html">Formations<span class="badge">*</span></a> ·
+    <a href="sorties.html">Sorties</a> ·
+    <a href="index.html#infos">Cotisation &amp; démarches</a> ·
+    <a href="contact.html">Contact</a> ·
+    <a href="devis.html">Devis</a> ·
+    <a href="questionnaire.html">Questionnaire</a>
+  </nav>
 </header>
 
-<main class="wrap">
-  <h1>Sorties & ateliers à venir</h1><div class="card">
-  <h2>Programme annuel — Les 5 sens 👁️👂🖐️👃👅</h2>
-  <p>Sorties et activités permettant à chacun d’explorer selon son profil sensoriel :</p>
-  <ul>
-    <li>Parcours nature & découvertes tactiles 🌳</li>
-    <li>Animations et jeux de lumière 🎨</li>
-    <li>Dégustations sensorielles 🍓</li>
-    <li>Sons doux & musique adaptée 🎧</li>
-    <li><strong>Sortie exceptionnelle au Parc Astérix</strong> 🎢 en fin d'année</li>
-  </ul>
-</div>
+<main>
 
-  <section class="grid">
-    <article class="card">
-      <h2>🌳 Balade sensorielle</h2>
-      <p>Parcours court, zones calmes, supports visuels. Adapté à tous âges.</p>
-      <p class="mini">Samedi 18 jan • 10:30 – 12:00 • Parc (à préciser)</p>
-    </article>
-
-    <article class="card">
-      <h2>🎨 Atelier créatif</h2>
-      <p>Matériel à textures, temps libres, coin retrait. Groupes réduits.</p>
-      <p class="mini">Mercredi 22 jan • 14:00 – 15:30 • Local IA77</p>
-    </article>
-
-    <article class="card">
-      <h2>🎞️ Ciné-doux</h2>
-      <p>Volume sonore adapté, lumières tamisées, liberté de mouvement.</p>
-      <p class="mini">Dimanche 26 jan • 11:00 • Cinéma partenaire</p>
-    </article>
-
-    <article class="card">
-      <h2>🤝 Café-parents</h2>
-      <p>Temps d’échanges bienveillant, ressources et entraide.</p>
-      <p class="mini">Vendredi 31 jan • 18:30 • Local IA77</p>
-    </article>
+  <!-- Sortie à venir -->
+  <section class="section">
+    <h2>🎡 Sortie de décembre : Jardin d’Acclimatation</h2>
+    <p><strong>Période :</strong> première semaine des vacances de Noël (date précise annoncée très prochainement).</p>
+    <ul>
+      <li>Lieu : <strong>Jardin d’Acclimatation</strong>, Paris.</li>
+      <li>Objectif pédagogique : exploration des <strong>5 sens</strong> à travers jeux et ateliers.</li>
+      <li>Encadrement par des intervenants formés aux approches TEACCH, ABA, Denver, etc.</li>
+      <li>Départ/retour : <strong>IA77, 3 avenue Charles de Gaulle – 7ᵉ étage, porte 711, 94470 Boissy-Saint-Léger</strong>.</li>
+      <li>Inscription préalable nécessaire (places limitées).</li>
+    </ul>
+    <a class="btn" href="questionnaire.html">Je m’inscris</a>
+    <a class="btn btn--ghost" href="contact.html">Nous contacter</a>
   </section>
 
-  <div class="card">
-    <p>👉 Intéressé·e ? Merci de remplir le <a href="questionnaire.html">questionnaire</a> pour nous aider à adapter les sorties.</p>
-  </div>
+  <!-- Projet annuel -->
+  <section class="section">
+    <h2>🌈 Projet annuel : « Les 5 Sens »</h2>
+    <p>Tout au long de l’année, IA77 propose des sorties et ateliers autour des <strong>5 sens</strong> pour
+       favoriser la découverte, la régulation sensorielle et l’autonomie, dans un cadre sécurisant et bienveillant.</p>
+    <p class="info">Les activités sont planifiées pour s’adapter aux profils sensoriels des enfants et adolescents
+       accompagnés, avec des supports visuels et des temps de pause.</p>
+  </section>
+
+  <!-- Grande sortie -->
+  <section class="section">
+    <h2>🎢 Grande sortie de fin d’année : Parc Astérix</h2>
+    <p>Une sortie festive au <strong>Parc Astérix</strong> est prévue en fin d’année (date communiquée ultérieurement).
+       Détails, inscriptions et accompagnement seront précisés en amont.</p>
+  </section>
+
+  <!-- Galerie -->
+  <section class="section">
+    <h2>📸 En images</h2>
+    <div class="grid">
+      <figure><img src="img/cafe-aidants-affiche.jpg" alt="Affiche Café aidants IA77"></figure>
+      <figure><img src="img/buffet-douceurs.jpg" alt="Buffet de douceurs lors d’un moment convivial"></figure>
+      <figure><img src="img/buffet-sale.jpg" alt="Buffet salé et boissons lors d’une rencontre IA77"></figure>
+      <figure><img src="img/deco-bureaux-1.jpg" alt="Décorations saisonnières dans les bureaux IA77"></figure>
+      <figure><img src="img/deco-bureaux-2.jpg" alt="Espace d’accueil et d’activités IA77"></figure>
+      <figure><img src="img/panneaux-rouge.jpg" alt="Panneau d’information IA77"></figure>
+    </div>
+    <p class="info">💡 Si vous ne voyez pas les images, chargez-les dans le dossier <code>img/</code> du dépôt (voir instructions ci-dessous).</p>
+  </section>
+
+  <!-- Rappels pratiques -->
+  <section class="section">
+    <h2>ℹ️ Infos pratiques</h2>
+    <ul>
+      <li>Encadrement par des intervenants formés. Suivi réalisé principalement <strong>dans nos bureaux</strong>.</li>
+      <li>Participation financière selon l’activité ; possibilité de soutien via notre Cotizup (voir page « Cotisation & démarches »).</li>
+      <li>Contact : <a href="mailto:infinimentautiste.ia77@gmail.com">infinimentautiste.ia77@gmail.com</a> – 07&nbsp;66&nbsp;37&nbsp;84&nbsp;62</li>
+    </ul>
+  </section>
+
 </main>
 
-<footer>
-  <div class="wrap"><p>📞 06 00 00 00 00 · ✉️ contact@ia77.fr · 📍 Seine-et-Marne</p></div>
+<footer style="text-align:center;padding:2rem 1rem;border-top:2px solid var(--brand)">
+  © IA77 – Infiniment Autiste 77
 </footer>
+
 </body>
 </html>
