@@ -1,57 +1,53 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact — IA77</title>
-<style>
-  body { font-family: system-ui, Arial; margin: 0; background-color: #f7f7f7; color: #0b1736; line-height: 1.6; }
-  header { background: #fff; border-bottom: 3px solid #0a7bdc; text-align: center; padding: 1rem; }
-  nav a { margin: .4rem; color: #0a7bdc; text-decoration: none; font-weight: bold; }
-  nav a:hover { text-decoration: underline; }
-  main { max-width: 700px; margin: auto; padding: 1.2rem; }
-  .section { background: #fff; padding: 1rem; border-radius: 8px; margin: 1rem 0; }
-  label { display: block; margin: .6rem 0 .2rem; }
-  input, textarea { width: 100%; padding: .7rem; border-radius: 6px; border: 1px solid #ccc; margin-bottom: 1rem; }
-  button { background: #0a7bdc; color: white; border: none; padding: .7rem 1.2rem; border-radius: 6px; cursor: pointer; }
-  button:hover { background: #095fa6; }
-</style>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact — IA77</title>
+  <style>
+    :root{--brand:#0a7bdc;--fg:#0b1736;--bg:#f6f8fb;--card:#fff;--radius:14px}
+    *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--fg)}
+    header{background:#fff;border-bottom:3px solid var(--brand)}.wrap{max-width:900px;margin:auto;padding:1rem 1.2rem}
+    nav{display:flex;flex-wrap:wrap;gap:.6rem .9rem;margin-top:.6rem}nav a{padding:.45rem .7rem;border-radius:999px;text-decoration:none;color:var(--fg);background:#eef6ff;border:1px solid #d6eaff}
+    nav a:hover{background:#dff0ff}.card{background:var(--card);padding:1rem 1.1rem;border-radius:var(--radius);box-shadow:0 2px 10px rgba(2,24,62,.06);margin:1rem 0}
+    label{display:block;margin:.6rem 0 .2rem}input,textarea{width:100%;padding:.7rem;border-radius:10px;border:1px solid #d7dce3}
+    button{margin-top:.8rem;background:var(--brand);color:#fff;border:none;border-radius:10px;padding:.7rem 1rem}
+    footer{margin-top:2rem;background:#0b1736;color:#fff}footer a{color:#d9ecff;text-decoration:none}.brand{display:flex;gap:.6rem;align-items:center}.brand b{color:#0a7bdc;font-size:1.4rem}
+  </style>
 </head>
 <body>
-
 <header>
-  <h2>Contact — IA77</h2>
-  <nav>
-    <a href="#apros">À propos</a> ·
-<a href="#accomp">Accompagnements</a> ·
-<a href="formation.html">Formations</a> ·
-<a href="#sorties">Sorties</a> ·
-<a href="#infos">Cotisation & démarches</a> ·
-<a href="contact.html">Contact</a> ·
-<a href="devis.html">Devis</a> ·
-<a href="questionnaire.html">Questionnaire</a>
-  </nav>
+  <div class="wrap">
+    <div class="brand"><span>🧩</span><b>Infiniment Autiste 77</b></div>
+    <nav>
+      <a href="index.html">À propos</a>
+      <a href="formation.html">Formations</a>
+      <a href="sorties.html">Sorties</a>
+      <a href="devis.html">Devis</a>
+      <a href="contact.html">Contact</a>
+      <a href="questionnaire.html">Questionnaire</a>
+    </nav>
+  </div>
 </header>
 
-<main>
-<section class="section">
-  <h3>Nous contacter 📬</h3>
-  <p>Une question ? Besoin d’informations ? Écrivez-nous :</p>
-
-  <form action="mailto:infinimentautiste.ia77@gmail.com" method="post" enctype="text/plain">
-    <label>Votre nom :</label>
-    <input type="text" name="Nom" required>
-    
-    <label>Votre email :</label>
-    <input type="email" name="Email" required>
-
-    <label>Votre message :</label>
-    <textarea name="Message" rows="5" required></textarea>
-
-    <button type="submit">Envoyer ✉️</button>
-  </form>
-</section>
+<main class="wrap">
+  <section class="card">
+    <h1>Contact</h1>
+    <p>Une question ? Un besoin précis ? Écrivez-nous.</p>
+    <form action="mailto:contact@ia77.fr" method="post" enctype="text/plain">
+      <label>Votre nom</label>
+      <input required name="nom" placeholder="Nom et prénom">
+      <label>Votre email</label>
+      <input required type="email" name="email" placeholder="vous@exemple.fr">
+      <label>Message</label>
+      <textarea required name="message" rows="6" placeholder="Votre message..."></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+    <p>Ou écrivez directement à : <a href="mailto:contact@ia77.fr">contact@ia77.fr</a></p>
+  </section>
 </main>
 
+<footer>
+  <div class="wrap"><p>📞 06 00 00 00 00 · ✉️ contact@ia77.fr · 📍 Seine-et-Marne</p></div>
+</footer>
 </body>
 </html>
