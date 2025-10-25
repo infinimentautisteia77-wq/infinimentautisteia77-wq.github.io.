@@ -5,99 +5,97 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Questionnaire — IA77</title>
 <style>
-  body { font-family: system-ui, Arial; margin:0; background:#f7f7f7; color:#07203f; }
-  header { background:#fff; border-bottom:3px solid #0a7bdc; padding:1rem; text-align:center; }
-  nav a { margin:.3rem; color:#0a7bdc; font-weight:bold; text-decoration:none; }
-  main { max-width:800px; margin:auto; padding:1.2rem; }
-  .section { background:#fff; padding:1rem; margin:1rem 0; border-radius:8px; }
-  label { font-weight:600; display:block; margin:.6rem 0 .2rem; }
-  input, select, textarea { width:100%; padding:.6rem; border:1px solid #ccd; border-radius:5px; margin-bottom:1rem; }
-  button { background:#0a7bdc; color:#fff; padding:.7rem 1.2rem; border:none; border-radius:6px; cursor:pointer; font-size:1rem; }
-  button:hover { background:#095fa6; }
+  body { font-family: Arial; margin:0; padding:0; background:#fafafa; }
+  header { background:#ffffff; padding:1rem; text-align:center; border-bottom:3px solid #0a7bdc; }
+  nav a { margin:0 .5rem; font-weight:bold; text-decoration:none; color:#0a7bdc; }
+  main { padding:1rem; max-width:850px; margin:auto; background:white; border-radius:8px; }
+  label { font-weight:bold; display:block; margin-top:1rem; }
+  input, select, textarea {
+    width:100%; padding:.7rem; margin-top:.4rem;
+    border:1px solid #ccc; border-radius:6px;
+  }
+  button {
+    background:#0a7bdc; color:white; border:none;
+    padding:.9rem 1.5rem; margin-top:1.2rem;
+    border-radius:8px; cursor:pointer; font-size:1.1rem;
+  }
+  footer {
+    margin-top:2rem; text-align:center; background:#f4f4f4;
+    padding:1rem; font-size:.92rem; color:#333;
+  }
 </style>
 </head>
 <body>
 
 <header>
-  <h2>Questionnaire IA77</h2>
+  <h1>Questionnaire — IA77</h1>
   <nav>
-    <a href="index.html">Accueil</a> ·
-    <a href="formations.html">Formations</a> ·
+    <a href="index.html">Accueil</a> |
+    <a href="formation.html">Formations</a> |
+    <a href="devis.html">Devis</a> |
+    <a href="sorties.html">Sorties</a> |
     <a href="contact.html">Contact</a>
   </nav>
 </header>
 
 <main>
-<form action="mailto:infinimentautiste.ia77@gmail.com" method="post" enctype="text/plain">
+<p>Merci de remplir ce court questionnaire afin que nous puissions vous proposer un accompagnement adapté 💙♾️</p>
 
-<section class="section">
-<h3>Vos informations</h3>
-<label>Nom :</label>
-<input type="text" name="Nom" required>
-<label>Prénom :</label>
-<input type="text" name="Prénom" required>
-<label>Téléphone :</label>
-<input type="text" name="Téléphone" required>
-<label>Email :</label>
-<input type="email" name="Email" required>
-<label>Adresse postale :</label>
-<input type="text" name="Adresse">
-</section>
+<form action="#" method="post">
 
-<section class="section">
-<h3>Âge de la personne autiste</h3>
-<select name="Âge">
-  <option>Moins de 5 ans</option>
-  <option>5 à 12 ans</option>
-  <option>13 à 18 ans</option>
-  <option>Plus de 18 ans</option>
-</select>
+  <label>Nom et prénom du parent :</label>
+  <input type="text" name="Parent" required>
 
-<h3>Type de troubles</h3>
-<label><input type="checkbox" name="TSA" value="Autisme de haut niveau"> Autisme de haut niveau</label>
-<label><input type="checkbox" name="TSA" value="Autisme classique"> Autisme classique</label>
-<label><input type="checkbox" name="TSA" value="Trouble du spectre autistique"> TSA</label>
-<label><input type="checkbox" name="TSA" value="Autres"> Autres</label>
-</section>
+  <label>Nom et prénom de l’enfant :</label>
+  <input type="text" name="Enfant" required>
 
-<section class="section">
-<h3>Défis quotidiens</h3>
-<label><input type="checkbox" name="Défis" value="Communication"> Communication</label>
-<label><input type="checkbox" name="Défis" value="Socialisation"> Socialisation</label>
-<label><input type="checkbox" name="Défis" value="Sensoriel"> Sensibilité sensorielle</label>
-<label><input type="checkbox" name="Défis" value="Comportements répétitifs"> Comportements répétitifs</label>
-<textarea name="Autres défis" placeholder="Autres..." rows="2"></textarea>
-</section>
+  <label>Age de l'enfant :</label>
+  <input type="text" name="Age" required>
 
-<section class="section">
-<h3>Alimentation</h3>
-<label>Préférences alimentaires :</label>
-<textarea name="Alimentation" rows="2"></textarea>
-<label>Difficultés repas :</label>
-<textarea name="Difficultés repas" rows="2"></textarea>
-</section>
+  <label>Ville de résidence :</label>
+  <input type="text" name="Ville" required>
 
-<section class="section">
-<h3>Autonomie</h3>
-<textarea name="Autonomie" rows="3"></textarea>
-</section>
+  <label>Email :</label>
+  <input type="email" name="Email" required>
 
-<section class="section">
-<h3>Activités & loisirs</h3>
-<textarea name="Activités" rows="3"></textarea>
-</section>
+  <label>Numéro de téléphone :</label>
+  <input type="tel" name="Tel" required>
 
-<section class="section">
-<h3>Améliorations souhaitées</h3>
-<textarea name="Idées" rows="3"></textarea>
-</section>
+  <label>Problématique principale rencontrée :</label>
+  <textarea name="Probleme" rows="4"></textarea>
 
-<center>
-<button type="submit">Envoyer le questionnaire ✅</button>
-</center>
+  <label>Situation scolaire actuelle :</label>
+  <select name="Scolarisation">
+    <option value="Scolarisé">Scolarisé</option>
+    <option value="Partiel">Temps partiel</option>
+    <option value="Non scolarisé">Non scolarisé</option>
+  </select>
 
+  <label>Souhaitez-vous un premier rendez-vous ?</label>
+  <select name="RDV">
+    <option value="Oui">Oui</option>
+    <option value="Non">Non</option>
+  </select>
+
+  <button type="submit">Envoyer</button>
 </form>
+
+<div style="text-align:center;margin:1.8rem 0;">
+  <a href="https://wa.me/33766378462?text=Bonjour%2C%20je%20souhaite%20avoir%20des%20informations%20IA77."
+     style="display:inline-block;background:#25D366;color:#fff;padding:.9rem 1.4rem;border-radius:10px;
+     font-weight:bold;text-decoration:none;margin:.4rem;">📱 WhatsApp</a>
+
+  <a href="https://www.cotizup.com/pour-un-nouveau-local"
+     style="display:inline-block;background:#0a7bdc;color:#fff;padding:.9rem 1.4rem;border-radius:10px;
+     font-weight:bold;text-decoration:none;margin:.4rem;">💙 Soutenir IA77</a>
+</div>
+
 </main>
+
+<footer>
+📞 07 66 37 84 62 — ✉️ infinimentautiste.ia77@gmail.com  
+📍 3 Avenue Charles de Gaulle — 94470 Boissy-Saint-Léger (Porte 711)
+</footer>
 
 </body>
 </html>
