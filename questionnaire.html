@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Questionnaire — IA77</title>
+<style>
+  body { font-family: system-ui, Arial; margin:0; background:#f7f7f7; color:#07203f; }
+  header { background:#fff; border-bottom:3px solid #0a7bdc; padding:1rem; text-align:center; }
+  nav a { margin:.3rem; color:#0a7bdc; font-weight:bold; text-decoration:none; }
+  main { max-width:800px; margin:auto; padding:1.2rem; }
+  .section { background:#fff; padding:1rem; margin:1rem 0; border-radius:8px; }
+  label { font-weight:600; display:block; margin:.6rem 0 .2rem; }
+  input, select, textarea { width:100%; padding:.6rem; border:1px solid #ccd; border-radius:5px; margin-bottom:1rem; }
+  button { background:#0a7bdc; color:#fff; padding:.7rem 1.2rem; border:none; border-radius:6px; cursor:pointer; font-size:1rem; }
+  button:hover { background:#095fa6; }
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Questionnaire IA77</h2>
+  <nav>
+    <a href="index.html">Accueil</a> ·
+    <a href="formations.html">Formations</a> ·
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+<form action="mailto:infinimentautiste.ia77@gmail.com" method="post" enctype="text/plain">
+
+<section class="section">
+<h3>Vos informations</h3>
+<label>Nom :</label>
+<input type="text" name="Nom" required>
+<label>Prénom :</label>
+<input type="text" name="Prénom" required>
+<label>Téléphone :</label>
+<input type="text" name="Téléphone" required>
+<label>Email :</label>
+<input type="email" name="Email" required>
+<label>Adresse postale :</label>
+<input type="text" name="Adresse">
+</section>
+
+<section class="section">
+<h3>Âge de la personne autiste</h3>
+<select name="Âge">
+  <option>Moins de 5 ans</option>
+  <option>5 à 12 ans</option>
+  <option>13 à 18 ans</option>
+  <option>Plus de 18 ans</option>
+</select>
+
+<h3>Type de troubles</h3>
+<label><input type="checkbox" name="TSA" value="Autisme de haut niveau"> Autisme de haut niveau</label>
+<label><input type="checkbox" name="TSA" value="Autisme classique"> Autisme classique</label>
+<label><input type="checkbox" name="TSA" value="Trouble du spectre autistique"> TSA</label>
+<label><input type="checkbox" name="TSA" value="Autres"> Autres</label>
+</section>
+
+<section class="section">
+<h3>Défis quotidiens</h3>
+<label><input type="checkbox" name="Défis" value="Communication"> Communication</label>
+<label><input type="checkbox" name="Défis" value="Socialisation"> Socialisation</label>
+<label><input type="checkbox" name="Défis" value="Sensoriel"> Sensibilité sensorielle</label>
+<label><input type="checkbox" name="Défis" value="Comportements répétitifs"> Comportements répétitifs</label>
+<textarea name="Autres défis" placeholder="Autres..." rows="2"></textarea>
+</section>
+
+<section class="section">
+<h3>Alimentation</h3>
+<label>Préférences alimentaires :</label>
+<textarea name="Alimentation" rows="2"></textarea>
+<label>Difficultés repas :</label>
+<textarea name="Difficultés repas" rows="2"></textarea>
+</section>
+
+<section class="section">
+<h3>Autonomie</h3>
+<textarea name="Autonomie" rows="3"></textarea>
+</section>
+
+<section class="section">
+<h3>Activités & loisirs</h3>
+<textarea name="Activités" rows="3"></textarea>
+</section>
+
+<section class="section">
+<h3>Améliorations souhaitées</h3>
+<textarea name="Idées" rows="3"></textarea>
+</section>
+
+<center>
+<button type="submit">Envoyer le questionnaire ✅</button>
+</center>
+
+</form>
+</main>
+
+</body>
+</html>
