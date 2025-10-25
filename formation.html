@@ -1,103 +1,83 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Formations — IA77</title>
-  <style>
-    /* mêmes styles que index pour cohérence */
-    :root{--brand:#0a7bdc;--fg:#0b1736;--bg:#f6f8fb;--card:#fff;--muted:#6b7280;--radius:14px}
-    *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--fg);line-height:1.6}
-    header{background:#fff;border-bottom:3px solid var(--brand)}.wrap{max-width:1000px;margin:auto;padding:1rem 1.2rem}
-    nav{display:flex;flex-wrap:wrap;gap:.6rem .9rem;margin-top:.6rem}nav a{padding:.45rem .7rem;border-radius:999px;text-decoration:none;color:var(--fg);background:#eef6ff;border:1px solid #d6eaff}
-    nav a:hover{background:#dff0ff}.badge{font-weight:700;color:#e11d48;margin-left:.15rem}
-    main{max-width:1000px;margin:1rem auto;padding:0 1.2rem}.card{background:var(--card);padding:1rem 1.1rem;border-radius:var(--radius);box-shadow:0 2px 10px rgba(2,24,62,.06);margin:1rem 0}
-    h1,h2{color:var(--brand)}label{display:block;margin:.4rem 0 .2rem}.btn{display:inline-block;padding:.55rem .9rem;border-radius:10px;background:var(--brand);color:#fff;text-decoration:none;border:none}
-    footer{margin-top:2rem;background:#0b1736;color:#fff}footer a{color:#d9ecff;text-decoration:none}.brand{display:flex;gap:.6rem;align-items:center}.brand b{color:var(--brand);font-size:1.4rem}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formations — IA77</title>
+<style>
+  body { font-family: Arial; margin:0; padding:0; background:#fafafa; }
+  header { background:white; padding:1rem; text-align:center; border-bottom:3px solid #0a7bdc; }
+  nav a { margin:0 .5rem; font-weight:bold; text-decoration:none; color:#0a7bdc; }
+  main { padding:1.2rem; max-width:850px; margin:auto; background:white; border-radius:8px; }
+  h1, h2 { color:#0a7bdc; }
+  section { margin-top:1.4rem; }
+  ul { margin-left:1.2rem; }
+  footer {
+    margin-top:2rem; text-align:center; background:#f4f4f4;
+    padding:1rem; font-size:.92rem; color:#333;
+  }
+  .cta {
+    display:inline-block; background:#0a7bdc; color:white;
+    padding:.9rem 1.4rem; border-radius:8px; text-decoration:none;
+    font-size:1.1rem; margin-top:1rem;
+  }
+</style>
 </head>
+
 <body>
+
 <header>
-  <div class="wrap">
-    <div class="brand"><span>🧩</span><b>Infiniment Autiste 77</b></div>
-    <nav>
-      <a href="index.html">À propos</a>
-      <a href="formation.html">Formations<span class="badge">*</span></a>
-      <a href="sorties.html">Sorties</a>
-      <a href="devis.html">Devis</a>
-      <a href="contact.html">Contact</a>
-      <a href="questionnaire.html">Questionnaire</a>
-    </nav>
-  </div>
+  <h1>Formations — IA77</h1>
+  <nav>
+    <a href="index.html">Accueil</a> |
+    <a href="questionnaire.html">Questionnaire</a> |
+    <a href="devis.html">Devis</a> |
+    <a href="sorties.html">Sorties</a> |
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
 
-<main class="wrap">
-  <section class="card">
-    <h1>Formations<span class="badge">*</span> — Janvier</h1>
-    <p><em>Par des éducateurs spécialisés et des professionnels formés à l’autisme.</em><br>
-      <strong>Inscription nécessaire</strong> (places limitées).</p>
+<main>
 
-    <h2>• Comprendre les profils sensoriels</h2>
-    <p>Identifier les déclencheurs et adapter l’environnement quotidien.</p>
+<p>IA77 organise des formations destinées aux aidants, parents et professionnels pour une meilleure compréhension de l’autisme 💙♾️</p>
 
-    <h2>• Communication et régulation émotionnelle</h2>
-    <p>Outils visuels, scénarios sociaux, stratégies de co-régulation.</p>
+<section>
+  <h2>📘 Formations proposées</h2>
+  <ul>
+    <li>Comprendre l’autisme 🧩</li>
+    <li>Gestion des comportements difficiles</li>
+    <li>Communication & outils visuels (PECS, supports visuels…)</li>
+    <li>Sensibilisation aux méthodes : ABA, TEACCH, Denver…</li>
+    <li>Organisation du quotidien & autonomie ✅</li>
+  </ul>
+</section>
 
-    <h2>• Coopération famille – école – professionnels</h2>
-    <p>Construire des ponts efficaces autour de la personne.</p>
+<section>
+  <h2>🎯 Objectifs</h2>
+  <ul>
+    <li>Soutenir les familles et aidants</li>
+    <li>Améliorer la communication et l’inclusion</li>
+    <li>Renforcer les compétences éducatives</li>
+  </ul>
+</section>
 
-    <p><a class="btn" href="questionnaire.html">Je m’inscris / je présente mes besoins</a></p>
-  </section>
+<section>
+  <h2>📍 Modalités</h2>
+  <p>📌 Formations assurées par des intervenants formés à l’autisme.</p>
+  <p>📌 Lieu : 3 avenue Charles de Gaulle — 94470 Boissy-Saint-Léger — Porte 711</p>
+  <p>📌 Tarif : communiqué selon la session (inscription obligatoire ✅)</p>
+</section>
+
+<div style="text-align:center;margin-top:1.4rem;">
+  <a href="questionnaire.html" class="cta">📄 Remplir le questionnaire</a>
+</div>
+
 </main>
 
 <footer>
-  <div class="wrap">
-    <p>📞 06 00 00 00 00 · ✉️ contact@ia77.fr · 📍 Seine-et-Marne</p>
-  </div><section class="card">
-  <h2>Tarifs & prise en charge 💼</h2>
-  <p>La prise en charge nécessite <strong>une demi-matinée minimum par semaine</strong>.</p>
-
-  <ul>
-    <li><strong>1 demi-matinée / semaine</strong> → 50€ / mois</li>
-    <li><strong>2 demi-matinées / semaine</strong> → 100€ / mois</li>
-    <li><strong>3 demi-matinées / semaine</strong> → 150€ / mois</li>
-    <li><strong>4 demi-matinées / semaine</strong> → 200€ / mois (plafonné)</li>
-  </ul>
-
-  <p>
-    ✅ Au-delà de 4 demi-matinées par semaine, la cotisation reste bloquée à 
-    <strong>200€</strong> par mois.
-  </p>
-
-  <p><em>La cotisation couvre l’accès aux activités, au local IA77, au matériel adapté et à l’accompagnement personnalisé.</em></p>
-
-  <p><strong>Avantage financier :</strong> Les heures de prise en charge à domicile ou en sortie sont effectuées par des intervenants formés et peuvent ouvrir droit au <strong>crédit d’impôt</strong> (service à la personne), permettant un remboursement partiel de l’État.</p>
-</section> <section class="card">
-  <h2>Lieu des prises en charge 🧩</h2>
-  <p>
-    Les suivis sont réalisés <strong>exclusivement dans nos bureaux IA77</strong> à 
-    Boissy-Saint-Léger, dans un cadre calme et adapté aux profils sensoriels.
-  </p>
-  <ul>
-    <li>Accompagnement sur place uniquement ✅</li>
-    <li>Les intervenants ne se déplacent <strong>ni dans les écoles</strong> ni au <strong>domicile des enfants</strong></li>
-    <li>Présence du parent possible lors des premières séances si besoin</li>
-    <li>Espace sensoriel et matériel éducatif adapté</li>
-  </ul>
-  <p>Notre objectif : <strong>offrir un environnement structuré, rassurant et constant</strong> pour favoriser les progrès de chaque enfant.</p> <section class="card">
-  <h2>Lieu des prises en charge 🧩</h2>
-  <p>
-    Les suivis sont réalisés <strong>exclusivement dans nos bureaux IA77</strong> à 
-    Boissy-Saint-Léger, dans un cadre calme et adapté aux profils sensoriels.
-  </p>
-  <ul>
-    <li>Accompagnement sur place uniquement ✅</li>
-    <li>Les intervenants ne se déplacent <strong>ni dans les écoles</strong> ni au <strong>domicile des enfants</strong></li>
-    <li>Présence du parent possible lors des premières séances si besoin</li>
-    <li>Espace sensoriel et matériel éducatif adapté</li>
-  </ul>
-  <p>Notre objectif : <strong>offrir un environnement structuré, rassurant et constant</strong> pour favoriser les progrès de chaque enfant.</p>
-</section>
-</section>
+📞 07 66 37 84 62 — ✉️ infinimentautiste.ia77@gmail.com  
+📍 3 Avenue Charles de Gaulle — 94470 Boissy-Saint-Léger (Porte 711)
 </footer>
+
 </body>
 </html>
