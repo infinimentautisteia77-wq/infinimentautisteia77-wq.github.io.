@@ -1,76 +1,91 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Infiniment Autiste 77 — IA77</title>
-<style>
-  body { font-family: system-ui, Arial; margin: 0; background-color: #f7f7f7; color: #0b1736; line-height: 1.6; }
-  header { background-color: #ffffff; border-bottom: 3px solid #0a7bdc; text-align: center; padding: 1rem; }
-  <nav>
-  <a href="#apros">À propos</a> ·
-<a href="#accomp">Accompagnements</a> ·
-<a href="formation.html">Formations</a> ·
-<a href="#sorties">Sorties</a> ·
-<a href="#infos">Cotisation & démarches</a> ·
-<a href="contact.html">Contact</a> ·
-<a href="devis.html">Devis</a> ·
-<a href="questionnaire.html">Questionnaire</a>
-</nav>
-  main { padding: 1rem 1.2rem; max-width: 900px; margin: auto; }
-  .section { background: #fff; margin: 1rem 0; padding: 1rem; border-radius: 8px; }
-  h1, h2 { color: #0a7bdc; }
-  .btn { display: inline-block; margin-top: .8rem; padding: .6rem 1rem; border-radius: 6px; text-decoration: none; background-color: #0a7bdc; color: #fff; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Infiniment Autiste 77 — IA77</title>
+  <meta name="description" content="IA77 : accompagnements, formations, sorties, démarches et ressources pour profils autistiques en Seine-et-Marne.">
+  <style>
+    :root{
+      --brand:#0a7bdc; --fg:#0b1736; --bg:#f6f8fb; --card:#fff; --muted:#6b7280;
+      --radius:14px;
+    }
+    *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--fg);line-height:1.6}
+    header{background:#fff;border-bottom:3px solid var(--brand);position:sticky;top:0;z-index:10}
+    .wrap{max-width:1000px;margin:auto;padding:1rem 1.2rem}
+    .brand{display:flex;gap:.6rem;align-items:center}
+    .brand b{font-size:1.4rem;color:var(--brand)}
+    nav{display:flex;flex-wrap:wrap;gap:.6rem .9rem;margin-top:.6rem}
+    nav a{padding:.45rem .7rem;border-radius:999px;text-decoration:none;color:var(--fg);background:#eef6ff;border:1px solid #d6eaff}
+    nav a:hover{background:#dff0ff}
+    .badge{font-weight:700;color:#e11d48;margin-left:.15rem}
+    main{max-width:1000px;margin:1rem auto;padding:0 1.2rem}
+    .card{background:var(--card);padding:1rem 1.1rem;border-radius:var(--radius);box-shadow:0 2px 10px rgba(2,24,62,.06);margin:1rem 0}
+    h1,h2{color:var(--brand);margin:.2rem 0 .6rem}
+    ul{margin:.4rem 0 .2rem 1.1rem}
+    .grid{display:grid;gap:1rem}
+    @media(min-width:840px){.grid{grid-template-columns:1fr 1fr}}
+    footer{margin-top:2rem;background:#0b1736;color:#fff}
+    footer a{color:#d9ecff;text-decoration:none}
+    .mini{color:var(--muted);font-size:.9rem}
+  </style>
 </head>
 <body>
+  <header>
+    <div class="wrap">
+      <div class="brand">
+        <span>🧩</span><b>Infiniment Autiste 77</b>
+      </div>
+      <nav>
+        <a href="index.html">À propos</a>
+        <a href="formation.html">Formations<span class="badge">*</span></a>
+        <a href="sorties.html">Sorties</a>
+        <a href="devis.html">Devis</a>
+        <a href="contact.html">Contact</a>
+        <a href="questionnaire.html">Questionnaire</a>
+      </nav>
+    </div>
+  </header>
 
-<header>
-  <h1>Infiniment Autiste 77 — IA77</h1>
-  <p>Pour des parcours réellement adaptés ✨</p>
-  <nav>
-    <a href="#aprepos">À propos</a> ·
-    <a href="#accomp">Accompagnements</a> ·
-    <a href="#forma">Formations</a> ·
-    <a href="#infos">Cotisation & démarches</a> ·
-    <a href="contact.html">Contact</a> ·
-    <a href="devis.html">🧾 Devis</a>
-  </nav>
-</header>
+  <main class="wrap">
+    <section class="card">
+      <h1>IA77 — Pour des parcours réellement adaptés ✨</h1>
+      <p><strong>IA77</strong> accompagne enfants, adolescents et familles autistes avec une approche respectueuse des besoins sensoriels, cognitifs et émotionnels.</p>
+      <ul>
+        <li>Écoute et adaptation réelle 💙</li>
+        <li>Coordination familles / professionnels 🤝</li>
+        <li>Bienveillance, sécurité & dignité</li>
+      </ul>
+    </section>
 
-<main>
-  <section class="section" id="aprepos">
-    <h2>À propos</h2>
-    <p><strong>IA77</strong> accompagne enfants, adolescents et familles autistes, avec une approche bienveillante, sensorielle et éducative.</p>
-    <ul>
-      <li>Écoute & adaptation réelle 💙</li>
-      <li>Coordination familles / professionnels</li>
-      <li>Respect & dignité</li>
-    </ul>
-  </section>
+    <section class="grid">
+      <div class="card">
+        <h2>Formations<span class="badge">*</span></h2>
+        <p><em>Par des éducateurs spécialisés et des professionnels formés à l’autisme.</em><br>
+        Sessions proposées en <strong>janvier</strong> — <a href="formation.html">inscription nécessaire</a>.</p>
+      </div>
+      <div class="card">
+        <h2>Questionnaire d’accueil</h2>
+        <p>Quelques minutes pour mieux cerner vos besoins. <a href="questionnaire.html">Remplir le questionnaire</a>.</p>
+      </div>
+      <div class="card">
+        <h2>Sorties & ateliers</h2>
+        <p>Des temps pensés pour l’exploration sereine et le plaisir partagé. <a href="sorties.html">Découvrir le programme</a>.</p>
+      </div>
+      <div class="card">
+        <h2>Devis</h2>
+        <p>Transparence et clarté. <a href="devis.html">Demander un devis</a>.</p>
+      </div>
+    </section>
+  </main>
 
-  <section class="section" id="accomp">
-    <h2>Accompagnements</h2>
-    <p>Soutenir la scolarisation et l’autonomie dans la vie quotidienne.</p>
-  </section>
-
-  <section class="section" id="forma">
-    <h2>Formations</h2>
-    <p>Pour parents & professionnels — à partir de janvier (inscription nécessaire) ⭐</p>
-  </section>
-
-  <section class="section" id="infos">
-    <h2>Cotisation & démarches</h2>
-    <p>Nous vous aidons dans toutes les démarches administratives.</p>
-    <a class="btn" href="devis.html">Demander un devis</a>
-  </section>
-</main>
-
-<footer style="text-align:center; padding:1rem; font-size:.8rem; color:#777;">
-  © 2025 Infiniment Autiste 77 - Tous droits réservés
-</footer>
-<p style="text-align:center;font-size:0.9rem;color:#0a7bdc;">
-* Formations assurées par des éducateurs spécialisés et des professionnels formés à l’autisme — dès janvier 2025, inscription nécessaire.
-</p>
+  <footer>
+    <div class="wrap">
+      <p><strong>IA77</strong> — Seine-et-Marne</p>
+      <p>📞 06 00 00 00 00 &nbsp;•&nbsp; ✉️ contact@ia77.fr</p>
+      <p>📍 Adresse (à compléter) — Réseaux : <a href="#">Facebook</a> · <a href="#">Instagram</a></p>
+      <p class="mini">© IA77 — Tous droits réservés</p>
+    </div>
+  </footer>
 </body>
 </html>
