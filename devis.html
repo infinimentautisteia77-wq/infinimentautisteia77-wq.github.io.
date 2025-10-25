@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Devis — IA77</title>
+<style>
+  body { font-family: system-ui, Arial; margin: 0; background-color: #f7f7f7; color: #0b1736; line-height: 1.6; }
+  header { background: #fff; border-bottom: 3px solid #0a7bdc; text-align: center; padding: 1rem; }
+  nav a { margin: .4rem; color: #0a7bdc; text-decoration: none; font-weight: bold; }
+  nav a:hover { text-decoration: underline; }
+  main { max-width: 750px; margin: auto; padding: 1rem; }
+  .section { background: #fff; padding: 1rem; border-radius: 8px; margin: 1rem 0; }
+  label { display: block; margin:.6rem 0 .2rem; }
+  input, select, textarea { width: 100%; padding: .7rem; border-radius: 6px; border: 1px solid #ccc; margin-bottom: 1rem; }
+  button { background: #0a7bdc; color: white; border: none; padding: .7rem 1.2rem; border-radius: 6px; cursor: pointer; }
+  button:hover { background: #095fa6; }
+  small { color: #666; }
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Devis — IA77</h2>
+  <nav>
+    <a href="index.html">Accueil</a> ·
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section class="section">
+  <h3>Demande de devis ✍️</h3>
+  <p>Remplissez le formulaire ci-dessous, nous reviendrons vers vous très vite !</p>
+
+  <form action="mailto:infinimentautiste.ia77@gmail.com" method="post" enctype="text/plain">
+    <label>Nom et prénom :</label>
+    <input type="text" name="Nom" required>
+
+    <label>Adresse email :</label>
+    <input type="email" name="Email" required>
+
+    <label>Nombre d’heures souhaitées :</label>
+    <select name="Heures">
+      <option value="2h/semaine">2h/semaine</option>
+      <option value="3h/semaine">3h/semaine</option>
+      <option value="4h/semaine">4h/semaine</option>
+      <option value="Autre">Autre</option>
+    </select>
+
+    <label>Message / Précisions :</label>
+    <textarea name="Message" rows="5"></textarea>
+
+    <button type="submit">Envoyer la demande 📨</button>
+
+    <small>* Formations assurées par des éducateurs spécialisés et des professionnels formés à l’autisme — dès janvier 2025, inscription nécessaire.</small>
+  </form>
+</section>
+</main>
+
+</body>
+</html>
