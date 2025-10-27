@@ -5,7 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sorties – IA77</title>
   <meta name="description" content="Sorties éducatives IA77 : projet Les 5 Sens, Jardin d’Acclimatation en décembre, grande sortie Parc Astérix en fin d’année.">
-  <style>
+  <style> #galerie {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+#galerie h2 {
+  color: #0a7bdc;
+}
+
+.galerie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+  margin-top: 1rem;
+}
+
+.galerie-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0,0,0,.1);
+  transition: transform .2s;
+}
+
+.galerie-grid img:hover {
+  transform: scale(1.05);
+}
     :root{
       --brand:#0a7bdc; --fg:#0b1736; --bg:#f5f7ff; --muted:#667;
       --card:#fff; --accent:#004a9f;
